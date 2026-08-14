@@ -1,4 +1,9 @@
 
+---
+title: "Hong Lo Blog 操作手册"
+date: 2026-08-14
+draft: false
+---
 # Hong Lo Blog 操作手册
 
 > Hugo + Blowfish + GitHub Pages
