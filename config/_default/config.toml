@@ -1,0 +1,5 @@
+baseURL = "https://l-hongl.github.io/"
+defaultContentLanguage = "zh-cn"
+theme = "blowfish"
+enableRobotsTXT = true
+enableEmoji = true
