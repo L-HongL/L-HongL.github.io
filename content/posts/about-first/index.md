@@ -1,16 +1,15 @@
-
 ---
 title: "Hong Lo Blog 操作手册"
 date: 2026-08-14
 draft: false
 ---
+
 # Hong Lo Blog 操作手册
 
 > Hugo + Blowfish + GitHub Pages
 >
 > 博客地址：https://l-hongl.github.io/
 
----
 
 ## 1. 博客技术栈
 
