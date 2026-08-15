@@ -7,6 +7,10 @@
   name = "文章"
   pageRef = "/posts"
   weight = 20
+[[main]]
+  name = "ACM"
+  pageRef = "/BLOG"
+  weight = 20
 
 [[main]]
   name = "标签"
