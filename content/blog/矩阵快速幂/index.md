@@ -1,0 +1,53 @@
+---
+title: "矩阵快速幂"
+description: "cpp include<bits/stdc++.h using namespace std; struct Matrix{ long long a[55][55]; };"
+date: 2026-08-15
+draft: false
+categories:
+  - "算法笔记"
+tags: []
+---
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+struct Matrix{
+    long long a[55][55];
+};
+
+vector<vector<long long>> build_qpow(){
+
+}
+
+vector<vector<long long>> mixqp(vector<vector<long long>> a,vector<vector<long long>> b){
+    vector<vector<long long>> ans;
+    for(int i=1;i<=1145;i++){
+        for(int j=1;j<=1145;j++){
+            for(int c=1;c<=1145;c++){
+                ans[i][j]+=a[i][c]*b[c][j];
+            }
+        }
+    }
+    return ans;
+}
+
+vector<vector<long long>> qpow(vector<vector<long long>> qp,long long m){
+    vector<vector<long long>> ans={{1,0},{0,1}};
+    vector<vector<long long>> mid=qp;
+    while(m){
+        if(m&1){
+            ans=mixqp(ans,mid);
+        }
+        mid=mixqp(mid,mid);
+        m>>=1;
+    }
+    return ans;
+}
+
+vector<vector<long long>> get_qpow_ans(){
+    vector<vector<long long>> qp=build_qpow();
+    return qpow(qp,1145);
+    
+}   
+
+int main(){}
+```

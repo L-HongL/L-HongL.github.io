@@ -1,0 +1,104 @@
+---
+title: "D1"
+description: "cpp include<bits/stdc++.h using namespace std; define LL long long define pii pair<int,int define pll pair<LL,LL define "
+date: 2026-08-15
+draft: false
+categories:
+  - "Codeforces"
+tags:
+  - "Codeforces"
+---
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+#define LL long long
+#define pii pair<int,int>
+#define pll pair<LL,LL>
+#define pk push_back
+#define pu push_back
+#define all(a) (a).begin(),(a).end()
+#define vii vector<int>
+#define vll vector<LL>
+#define se second
+#define fi first
+const LL mod=1e9+7;
+
+struct edg{
+    LL x;
+    LL k;
+    LL i; 
+    bool operator<(const edg& other) const{
+        return x<other.x;
+    }
+};
+
+void babason(){   
+    int n;cin>>n;
+    vector<LL> a(n);
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+
+    auto b=a;
+    sort(all(b));
+    b.erase(unique(b.begin(),b.end()),b.end());
+    for(int i=0;i<n;i++){
+        a[i]=lower_bound(all(b),a[i])-b.begin();
+    }
+
+    auto check=[&](int x,int y)->int{
+        if(x<0||y<0||x>=n||y>=n)return 0;
+        vector<int> num(n+1,0);
+        swap(a[x],a[y]);
+        for(int i=0;i<n;){
+            int j=i;
+            while(i<n&&a[j]==a[i])i++;
+            num[a[j]]++;   
+        }
+        swap(a[x],a[y]);
+        for(auto v:num){
+            if(v>=2)return 0;
+        }
+        return 1;
+    };
+
+
+    vector<vii> block(n+1);
+    vector<int> cet(n+1,0);
+        for(int i=0;i<n;){
+            int j=i;
+            while(i<n&&a[j]==a[i])i++;
+            cet[a[j]]++;
+
+            block[a[j]].pu(j);block[a[j]].pu(j-1);
+            block[a[j]].pu(i);block[a[j]].pu(i-1);
+        }
+
+    for(int i=0;i<n;i++){
+        if(cet[i]>1){
+            if(cet[i]>3){
+                cout<<"No\n";return;
+            }
+            int ok=0;
+            for(int j=0;j<block[i].size();j++){
+                for(int k=j+1;k<block[i].size();k++){
+                    ok=max(ok,check(block[i][j],block[i][k]));
+                }
+            }
+            if(ok==0){
+                cout<<"No\n";return;
+            }
+        }
+    }
+    cout<<"Yes\n";
+}
+int main(){
+    cin.tie(0);
+    cout.tie(0);
+    ios::sync_with_stdio(0);
+    int t;cin>>t;while(t--)
+    babason();
+    return 0;
+}
+
+```
