@@ -13,16 +13,16 @@
   weight = 20
 
 [[main]]
-  name = ""
-  weight =1
+  name = "abc"
+  weight =3
   parent = "ACM"
-  pageRef = "/BLOG1"
+  pageRef = "/acm/ABC"
 
 [[main]]
-  name = ""
+  name = "Codeforces"
   weight =2
   parent = "ACM"
-  pageRef = "/blog"
+  pageRef = "/acm/Codeforces"
 
 [[main]]
   name = "标签"

@@ -5,8 +5,8 @@ date = '{{.Date}}'
 draft = false
 
 
-tags = ['无']
-categories = ['博客']
+tags = ['abc']
+categories = ['题解']
 
 author = 'Luo Hong'
 
