@@ -29,3 +29,5 @@ showAuthor = true
 
 [assets]
   disableHLJS = true
+
+customCSS = ["css/custom.css"]

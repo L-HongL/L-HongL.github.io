@@ -1,0 +1,5 @@
+{{ $customJS := resources.Get "js/custom.js" }}
+{{ if $customJS }}
+    <script src="{{ $customJS.RelPermalink }}"></script>
+{{ end }}
+

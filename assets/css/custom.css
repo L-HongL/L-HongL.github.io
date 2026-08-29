@@ -1,0 +1,61 @@
+/* body {
+    background: linear-gradient(
+        -45deg,
+        
+        #39b4e5,
+        #23a6d5,
+        #0a3d8a,
+        #111fda
+    );
+
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    left: 50%;
+    top: 50%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(80, 130, 255, 0.16),
+        transparent 70%
+    );
+
+    filter: blur(20px);
+
+    transform: translate(-50%, -50%);
+
+    animation: heroGlow 8s ease-in-out infinite alternate;
+
+    pointer-events: none;
+}
+
