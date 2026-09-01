@@ -1,0 +1,11 @@
+2026/9/1
+数学公式未渲染
+解决：创建layouts\partials\extend-head.html，下载mathjax接管数学公式
+
+背景图片修改
+在asset/img/添加图片，在TOML文件中修改hamepage变量值，设置
+[homepage]
+  layout = "profile"
+为
+[homepage]
+  layout = "background"

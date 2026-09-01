@@ -3,10 +3,26 @@
   pageRef = "/"
   weight = 10
 
+
+
 [[main]]
   name = "文章"
   pageRef = "/posts"
   weight = 20
+
+[[main]]
+  name = "阅读小记"
+  pageRef = "/posts/readbook"
+  parent="文章"
+  weight = 20
+
+[[main]]
+  name = "嘉豪日记"
+  pageRef = "/posts/jiahao"
+  parent="文章"
+  weight = 20
+
+
 
 [[main]]
   name = "ACM"

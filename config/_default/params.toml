@@ -10,9 +10,12 @@ showTableOfContents = true
 showAuthor = true
 
 [homepage]
-  layout = "profile"
+  # layout = "profile"
+  homepageImage = "img/background.jpg"
+  layout = "background"
   showRecent = true
   showRecentItems = 10
+  
 
 [article]
   showDate = true
