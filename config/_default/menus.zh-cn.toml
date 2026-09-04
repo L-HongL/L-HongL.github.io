@@ -22,7 +22,11 @@
   parent="文章"
   weight = 20
 
-
+[[main]]
+  name = "美食寻记"
+  pageRef = "/posts/td"
+  parent="文章"
+  weight = 20
 
 [[main]]
   name = "ACM"
@@ -39,6 +43,12 @@
   weight =2
   parent = "ACM"
   pageRef = "/acm/Codeforces"
+
+  [[main]]
+  name = "算法"
+  weight =4
+  parent = "ACM"
+  pageRef = "/acm/算法"
 
 [[main]]
   name = "标签"
