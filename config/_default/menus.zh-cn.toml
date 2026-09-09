@@ -12,7 +12,7 @@
 
 [[main]]
   name = "阅读小记"
-  pageRef = "/posts/readbook"
+  pageRef = "/posts/read"
   parent="文章"
   weight = 20
 
@@ -23,7 +23,7 @@
   weight = 20
 
 [[main]]
-  name = "美食寻记"
+  name = "美食寻迹"
   pageRef = "/posts/td"
   parent="文章"
   weight = 20
@@ -44,7 +44,7 @@
   parent = "ACM"
   pageRef = "/acm/Codeforces"
 
-  [[main]]
+[[main]]
   name = "算法"
   weight =4
   parent = "ACM"

@@ -5,22 +5,11 @@ date = '{{.Date}}'
 draft = false
 
 
-tags = ['算法学习']
-categories = ['算法']
+tags = ['阅读']
+categories = ['小记']
 
 author = 'Luo Hong'
 
 showReadingTime = true
 showTableOfContents = true
 showWordCount = true
-+++
-## A
-
-
-## B
-
-
-## C
-
-
-## D
