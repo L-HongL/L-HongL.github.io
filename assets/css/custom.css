@@ -1,31 +1,3 @@
-/* body {
-    background: linear-gradient(
-        -45deg,
-        
-        #39b4e5,
-        #23a6d5,
-        #0a3d8a,
-        #111fda
-    );
-
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */
-
 .hero {
     position: relative;
     overflow: hidden;
@@ -58,4 +30,34 @@
 
     pointer-events: none;
 }
+/*缩略图展示*/
+.thumbnail_card img,
+.thumbnail img {
+    object-fit: contain;
+}
+/*缩略图在页面展示*/
+/* 文章 Hero：完整显示图片，不裁剪 */
+article .overflow-hidden:has(> img.nozoom.object-cover) img {
+    object-fit: contain !important;
+}
 
+
+
+/* 主页文章卡片不要因为同一行其他卡片变高而被强行拉伸 */
+/* 统一主页封面区域的比例 */
+/* 封面完整显示，不裁剪 */
+.article-link--card {
+    min-height: 0 !important;
+    align-self: start !important;
+}
+
+.article-link--card .thumbnail_card {
+    aspect-ratio: 3 / 2 !important;
+    height: auto !important;
+}
+
+.article-link--card .thumbnail_card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
