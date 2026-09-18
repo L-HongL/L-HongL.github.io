@@ -1,7 +1,7 @@
 
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = '{{.Date}}'
+title = '少有人走的路'
+date = '2026-09-18T00:19:42+08:00'
 draft = false
 
 

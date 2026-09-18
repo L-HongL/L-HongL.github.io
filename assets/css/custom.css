@@ -42,7 +42,6 @@ article .overflow-hidden:has(> img.nozoom.object-cover) img {
 }
 
 
-
 /* 主页文章卡片不要因为同一行其他卡片变高而被强行拉伸 */
 /* 统一主页封面区域的比例 */
 /* 封面完整显示，不裁剪 */
@@ -50,12 +49,10 @@ article .overflow-hidden:has(> img.nozoom.object-cover) img {
     min-height: 0 !important;
     align-self: start !important;
 }
-
 .article-link--card .thumbnail_card {
     aspect-ratio: 3 / 2 !important;
     height: auto !important;
 }
-
 .article-link--card .thumbnail_card img {
     width: 100% !important;
     height: 100% !important;
