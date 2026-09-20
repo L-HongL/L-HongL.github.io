@@ -42,7 +42,7 @@
   name = "Codeforces"
   weight =2
   parent = "ACM"
-  pageRef = "/acm/Codeforces"
+  pageRef = "/acm/cf"
 
 [[main]]
   name = "算法"
